@@ -1,0 +1,5 @@
+Build an image:
+➜ docker build -t jupyter_notebook .
+
+Run a container:
+➜ docker run -it -v $(pwd)/notebooks:/notebooks -p 8888:8888 jupyter_notebook
